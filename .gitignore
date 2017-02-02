@@ -1,0 +1,7 @@
+*.pyc
+*.*~
+ckanext_transparencyderp.egg-info/*
+links/*
+build/*
+dist/*
+

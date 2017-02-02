@@ -1,0 +1,152 @@
+# German translations for ckanext-transparencyderp.
+# Copyright (C) 2017 ORGANIZATION
+# This file is distributed under the same license as the
+# ckanext-transparencyderp project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ckanext-transparencyderp 0.0.1\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2017-01-25 16:20+0100\n"
+"PO-Revision-Date: 2017-01-25 16:21+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.6\n"
+
+#: ckanext/transparencyderp/plugin.py:95 ckanext/transparencyderp/plugin.py:103
+#: ckanext/transparencyderp/plugin.py:112
+msgid "transparency classification"
+msgstr "Transparenz Klassifikation"
+
+#: ckanext/transparencyderp/plugin.py:96 ckanext/transparencyderp/plugin.py:104
+#: ckanext/transparencyderp/plugin.py:113
+msgid "govdata classification"
+msgstr "GovData Klassifikation"
+
+#: ckanext/transparencyderp/plugin.py:97 ckanext/transparencyderp/plugin.py:106
+#: ckanext/transparencyderp/plugin.py:114
+msgid "Dataset type"
+msgstr "Datensatztyp"
+
+#: ckanext/transparencyderp/plugin.py:98
+msgid "Entity type"
+msgstr "Objekttyp"
+
+#: ckanext/transparencyderp/templates/package/search.html:4
+#: ckanext/transparencyderp/templates/package/search.html:7
+msgid "Datasets"
+msgstr "Datensätze"
+
+#: ckanext/transparencyderp/templates/package/search.html:16
+msgid "Add Dataset"
+msgstr "Datensatz hinzufügen"
+
+#: ckanext/transparencyderp/templates/package/search.html:18
+msgid "Please select a schema"
+msgstr "Bitte wählen Sie eine Vorlage"
+
+#: ckanext/transparencyderp/templates/package/search.html:39
+msgid "Relevance"
+msgstr "Relevanz"
+
+#: ckanext/transparencyderp/templates/package/search.html:40
+#: ckanext/transparencyderp/templates/snippets/search_form.html:4
+msgid "Name Ascending"
+msgstr "Name aufsteigend"
+
+#: ckanext/transparencyderp/templates/package/search.html:41
+#: ckanext/transparencyderp/templates/snippets/search_form.html:4
+msgid "Name Descending"
+msgstr "Name absteigend"
+
+#: ckanext/transparencyderp/templates/package/search.html:42
+msgid "Last Modified"
+msgstr "Letzte Änderung"
+
+#: ckanext/transparencyderp/templates/package/search.html:43
+msgid "Popular"
+msgstr "Nachfrage"
+
+#: ckanext/transparencyderp/templates/package/search.html:62
+msgid "API"
+msgstr "API"
+
+#: ckanext/transparencyderp/templates/package/search.html:63
+msgid "API Docs"
+msgstr "API Dokumentation"
+
+#: ckanext/transparencyderp/templates/package/search.html:65
+msgid "full {format} dump"
+msgstr "Vollständiger {format} Dump"
+
+#: ckanext/transparencyderp/templates/package/search.html:66
+#, python-format
+msgid ""
+" You can also access this registry using the %(api_link)s (see "
+"%(api_doc_link)s) or download a %(dump_link)s. "
+msgstr ""
+" Sie können die Registry auch direkt über %(api_link)s ansprechen. (siehe "
+"%(api_doc_link)s) oder herunterladen %(dump_link)s. "
+
+#: ckanext/transparencyderp/templates/package/search.html:70
+#, python-format
+msgid ""
+" You can also access this registry using the %(api_link)s (see "
+"%(api_doc_link)s). "
+msgstr ""
+" Sie können die Registry auch direkt über %(api_link)s anprechen. (siehe "
+"%(api_doc_link)s). "
+
+#: ckanext/transparencyderp/templates/snippets/facet_list.html:82
+msgid "Show More {facet_type}"
+msgstr "Zeige mehr {facet_type}"
+
+#: ckanext/transparencyderp/templates/snippets/facet_list.html:85
+msgid "Show Only Popular {facet_type}"
+msgstr "Zeige nur oft nachgefragte {facet_type}"
+
+#: ckanext/transparencyderp/templates/snippets/facet_list.html:89
+msgid "There are no {facet_type} that match this search"
+msgstr "Es gibt keine {facet_type} für die Suche"
+
+#: ckanext/transparencyderp/templates/snippets/search_form.html:3
+msgid "Search datasets..."
+msgstr "Suche Datensätze..."
+
+#: ckanext/transparencyderp/templates/snippets/search_form.html:17
+msgid "Submit"
+msgstr "Absenden"
+
+#: ckanext/transparencyderp/templates/snippets/search_form.html:32
+msgid "Order by"
+msgstr "Sortieren nach"
+
+#: ckanext/transparencyderp/templates/snippets/search_form.html:41
+msgid "Go"
+msgstr "Los"
+
+#: ckanext/transparencyderp/templates/snippets/search_form.html:68
+msgid "Remove"
+msgstr "Löschen"
+
+#: ckanext/transparencyderp/templates/snippets/search_form.html:73
+msgid "Filter Results"
+msgstr "Ergebnis filtern"
+
+#: ckanext/transparencyderp/templates/snippets/search_form.html:80
+msgid " <p class=\"extra\">Please try another search.</p> "
+msgstr " <p class=\"extra\">Bitte probieren Sie eine andere Suche.</p> "
+
+#: ckanext/transparencyderp/templates/snippets/search_form.html:86
+msgid ""
+" <p><strong>There was an error while searching.</strong> Please try "
+"again.</p> "
+msgstr ""
+" <p><strong>Es ist ein Fehler bei der Suche aufgetreten.</strong> Bitte versuchen Sie es "
+"erneut.</p> "
+

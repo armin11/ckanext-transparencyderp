@@ -1,0 +1,447 @@
+{
+  "scheming_version": 1,
+  "dataset_type": "ckan-govdata-full-1-1",
+  "dataset_type_label":
+    {
+      "en": "govdata json 1.0 template",
+      "de": "GovData OpenData Datensatz"
+    },
+  "about": "A reimplementation of the default CKAN dataset schema",
+  "about_url": "http://github.com/ckan/ckanext-scheming",
+  "dataset_fields": [
+    {
+      "field_name": "title",
+      "label": 
+        {
+          "en": "Title",
+          "de": "Titel"
+	},
+      "preset": "title",
+      "help_text": 
+        {
+          "en": "The title describes the dataset, the document or the app and will be shown in the result lists.",
+          "de": "Der Titel beschreibt den Datensatz, das Dokument oder die App prägnant und wird z. B. in Suchergebnissen und Listen angezeigt."
+        },
+      "help_inline": false,
+      "required": true,
+      "form_placeholder": "eg. A descriptive title"
+    },
+    {
+      "field_name": "name",
+      "label": 
+        {
+          "en": "URL",
+          "de": "URL"
+        },
+      "help_text": 
+      {
+        "en": "English translation ToBeDone!",
+        "de": "Ein für Menschen lesbarer Bezeichner des Datensatzes, des Dokuments oder der Apps, der für eine Identifizierung genutzt werden kann (einfache ASCII-Präsentation des Titels, auch für die Pretty-Link-URL, Linked Data URIs). Um Dopplungen zu vermeiden, wird empfohlen, dem eigentlichen Namen Land, Bundesland und ggf. feinerer Gebietskörperschaft im ISO 3166-1 und -2 Code voranzustellen, z.B. de-mv-rostock-polizeidienststellen."
+      },
+      "help_inline": false,
+      "required": true,
+      "preset": "dataset_slug",
+      "form_placeholder": "eg. my-dataset"
+    },
+    {
+      "field_name": "author",
+      "required": true, 
+      "help_text":
+       {
+          "en": "The organization from which the data come from.",
+          "de": "Die Behörde, von der die Daten stammen. Bei Apps der App-Hersteller."
+        },
+      "help_inline": false,
+      "label":
+        {
+          "en": "Author",
+          "de": "Autor"
+        },
+      "form_placeholder": "Joe Bloggs",
+      "display_property": "dc:creator"
+    },
+    {
+      "field_name": "author_email",
+      "required": false, 
+      "help_text": 
+       {
+          "en": "The organization from which the data come from.",
+          "de": "Email-Adresse oder Kontaktformular der Veröffentlichenden Stelle."
+        },
+      "label": 
+        {
+          "en": "Author Email",
+          "de": "Veröffentlichende Stelle Email"
+        },
+      "form_placeholder": "joe@example.com",
+      "display_property": "dc:creator",
+      "display_snippet": "email.html",
+      "display_email_name_field": "author"
+    },
+    {
+      "field_name": "maintainer",
+      "required": false, 
+      "help_text": 
+       {
+          "en": "This contact can be used for questions and remarks about the data.",
+          "de": "Dieser Ansprechpartner kann bei Fragen und Anmerkungen zu den Daten kontaktiert werden."
+        },
+      "label": 
+        {
+          "en": "Maintainer",
+          "de": "Datenverantwortliche Stelle"
+        },
+      "form_placeholder": "Joe Bloggs",
+      "display_property": "dc:contributor"
+    },
+    {
+      "field_name": "maintainer_email",
+      "label": 
+        {
+          "en": "Maintainer Email",
+          "de": "Datenverantwortliche Stelle Email"
+        },
+      "required": false, 
+      "help_text": 
+       {
+          "en": "This email contact for the maintainer of the data.",
+          "de": "Email-Adresse oder Kontaktformular der Datenverantwortlichen Stelle."
+        },
+      "form_placeholder": "joe@example.com",
+      "display_property": "dc:contributor",
+      "display_snippet": "email.html",
+      "display_email_name_field": "maintainer"
+    },
+    {
+      "field_name": "notes",
+      "label":
+        {
+          "en": "Description",
+          "de": "Beschreibung"
+        },
+      "required": true, 
+      "help_text": 
+       {
+          "en": "English translation ToBeDone!",
+          "de": "Beschreibung und weitere Informationen zum Datensatz, zum Dokument oder zur App, wird auf der Detailseite dargestellt und kann mehrere Absätze umfassen."
+        },
+      "form_snippet": "markdown.html",
+      "form_placeholder": "eg. Some useful notes about the data"
+    },
+    {
+      "field_name": "govdata_categories",
+      "preset": "multiple_checkbox",
+      "label": {
+        "en": "GovData categories",
+        "de": "GovData Kategorien"
+      },
+      "choices": [
+        {
+          "value": "wirtschaft_arbeit",
+          "label": 
+            {
+              "en": "Economy & Work",
+              "de": "Wirtschaft & Arbeit"
+            }
+        },
+        {
+           "value": "transport_verkehr",
+           "label": 
+             {
+               "en": "Transport & Traffic",
+               "de": "Transport & Verkehr"
+             }
+        },
+        {
+          "value": "umwelt_klima",
+          "label": 
+            {
+              "en": "Environment & Climate",
+              "de": "Umwelt & Klima"
+            }
+        },
+        {
+          "value": "geo",
+          "label": 
+            {
+              "en": "Geography, Geology & Spatialbasedata",
+              "de": "Geographie, Geologie und Geobasisdaten"
+            }
+        },
+       {
+          "value": "gesundheit",
+          "label": 
+            {
+              "en": "Health",
+              "de": "Gesundheit"
+            }
+        },
+       {
+          "value": "verbraucher",
+          "label": 
+            {
+              "en": "Consumer",
+              "de": "Verbraucher"
+            }
+        },
+       {
+          "value": "infrastruktur_bauen_wohnen",
+          "label": 
+            {
+              "en": "Infrastructure, Buildings, Living",
+              "de": "Infrastruktur, Bauen und Wohnen"
+            }
+        },
+       {
+          "value": "bildung_wissenschaft",
+          "label": 
+            {
+              "en": "Education & Science",
+              "de": "Bildung & Wissenschaft"
+            }
+        },
+        {
+          "value": "verwaltung",
+          "label": 
+            {
+              "en": "Public administration, Budget & Taxes",
+              "de": "Öffentliche Verwaltung, Haushalt & Steuern"
+            }
+        },
+        {
+          "value": "gesetze_justiz",
+          "label": 
+            {
+              "en": "Law & Justice",
+              "de": "Gesetze & Justiz"
+            }
+        },
+        {
+          "value": "bevoelkerung",
+          "label": 
+            {
+              "en": "Population",
+              "de": "Bevölkerung"
+            }
+        },
+        {
+          "value": "politik_wahlen",
+          "label": 
+            {
+              "en": "Politics & Elections",
+              "de": "Politik & Wahlen"
+            }
+        },
+        {
+          "value": "soziales",
+          "label": 
+            {
+              "en": "Social affairs",
+              "de": "Soziales"
+            }
+        },
+       {
+          "value": "kultur_freizeit_sport_tourismus",
+          "label": 
+            {
+              "en": "Culture, Leisure, Sport & Tourism",
+              "de": "Kultur, Freizeit, Sport & Tourismus"
+            }
+        }
+      ],
+      "required": true,
+      "help_text": 
+        {
+          "en": "Categories for Datasets and Documents. The codelist is static and will be maintained by GovData.",
+          "de": "Kategorien für die Datensätze und Dokumente. Die Kategorien sind statisch und werden vom (GovData-) Portalbetreiber langfristig gepflegt"
+        }
+    },
+    {
+      "field_name": "tag_string",
+      "label": 
+        {
+          "en": "Tags",
+          "de": "Schlagwörter"
+        },
+      "preset": "tag_string_autocomplete",
+      "form_placeholder": "eg. economy, mental health, government"
+    },
+    {
+      "field_name": "license_id",
+      "label":
+        { "en": "License",
+          "de": "Lizenz"
+        },
+      "required": true,
+      "form_snippet": "license.html",
+      "help_text": "License definitions and additional information can be found at http://opendefinition.org/"
+    },
+    {
+      "field_name": "owner_org",
+      "label": "Organization",
+      "preset": "dataset_organization"
+    },
+    {
+      "field_name": "url",
+      "label": "Source",
+      "form_placeholder": "http://example.com/dataset.json",
+      "display_property": "foaf:homepage",
+      "display_snippet": "link.html"
+    },
+    {
+      "field_name": "version",
+      "label": "Version",
+      "validators": "ignore_missing unicode package_version_validator",
+      "form_placeholder": "1.0"
+    },
+    {
+      "field_name": "transparency_category_de_rp",
+      "preset": "select",
+      "label": {
+        "en": "Transparency information categories",
+        "de": "Informationskat. gem. Transparenzgesetz"
+      },
+      "choices": [
+        {
+          "value": "council_of_ministers_decisions",
+          "label": {
+            "en": "Council of ministers decisions",
+            "de": "Ministerratsbeschlüsse"
+           }
+         },
+         {
+          "value": "decisions_from_public_meetings",
+          "label": {
+            "en": "Decisions from public meetings",
+            "de": "In öffentlicher Sitzung gemachte Beschlüsse"
+          }
+        },
+        {
+          "value": "reports_and_messages_to_state_parliament",
+          "label": {
+            "en": "Reports & Messages to State Parliament",
+            "de": "Berichte & Mitteilungen an den Landtag"
+          }
+        },
+        {
+          "value": "spatial_data",
+          "label": {
+            "en": "Spatial data",
+            "de": "Geodaten"
+          }
+        },
+        {
+          "value": "contracts_of_general_public_interest",
+          "label": {
+            "en": "Contracts of general public interest",
+            "de": "Veträge von allgemeinem öffentlichen Interesse"
+          }
+        },
+        {
+          "value": "plans",
+          "label": {
+            "en": "Plans",
+            "de": "Pläne"
+          }
+        },
+        {
+          "value": "administrative_regulations_publications",
+          "label": {
+            "en": "Administrative regulations and publications",
+            "de": "Verwaltungsvorschriften und Veröffentlichungen"
+          }
+        },
+        {
+          "value": "official_statistics_and_activity_reports",
+          "label": {
+            "en": "Official statistics and activity reports",
+            "de": "Amtliche Statistiken und Tätigkeitsberichte"
+          }
+        },
+        {
+          "value": "assessments_studies",
+          "label": {
+            "en": "Assessments and studies",
+            "de": "Gutachten und Studien"
+          }
+        },
+        {
+          "value": "public_plans",
+          "label": {
+            "en": "Public plans",
+            "de": "Öffentliche Pläne"
+          }
+        },
+        {
+          "value": "benefits_sponsorship_above_1000",
+          "label": {
+            "en": "Benefits with sponsorship above 1000.00 €",
+            "de": "Zuwendungen mit Fördersummen ab 1000,00 €"
+          }
+        },
+        {
+          "value": "benefits_to_public_sector_above_1000",
+          "label": {
+            "en": "Benefits to public sector above 1000.00 €",
+            "de": "Zuwendungen an die öffentliche Hand ab 1000,00 €"
+          }
+        },
+        {
+          "value": "participating_interests_federal_state",
+          "label": {
+            "en": "Participating interests of the Federal State",
+            "de": "Beteiligungen des Landes"
+          }
+        },
+        {
+          "value": "published_information_based_on_request",
+          "label": {
+            "en": "Published information based on formal request",
+            "de": "Im Rahmen des Antragsverfahrens gemäß den Bestimmungen des Teils 3 elektronisch zugänglich gemachte Informationen"
+          }
+        }
+      ]
+    },
+    {
+      "field_name": "spatial",
+      "label":
+        {
+          "en": "Geometry",
+          "de": "Geometrie"
+        },
+      "required": false, 
+      "help_text": 
+        {
+          "en": "A standardized geometry object, that defines the spatial extent of the resource. It should be used to enable spatial search. The needed format is a geojson polygon in geographic coordinates (EPSG:4326).",
+          "de": "Die geographische Abdeckung des Datensatzes in WGS 84 Koordinaten nach GeoJSON http://geojson.org . Wird später für eine geographische Suche verwendet."
+        },
+      "form_placeholder": "{\"type\":\"Polygon\",\"coordinates\":[[[6.472018089463637,50.308602634064464],[7.258028147645599,50.323042031119805],[7.305221999923707,49.784060270610595],[6.485848441405248,49.77816838396392],[6.472018089463637,50.308602634064464]]]}"
+    }
+  ],
+  "resource_fields": [
+    {
+      "field_name": "url",
+      "label": "URL",
+      "required": true,
+      "preset": "resource_url_upload"
+    },
+    {
+      "field_name": "name",
+      "label": "Name",
+      "form_placeholder": "eg. January 2011 Gold Prices"
+    },
+    {
+      "field_name": "description",
+      "label": "Description",
+      "required": true,
+      "form_snippet": "markdown.html",
+      "form_placeholder": "Some useful notes about the data"
+    },
+    {
+      "field_name": "format",
+      "label": "Format",
+      "required": true,
+      "preset": "resource_format_autocomplete"
+    }
+  ]
+}

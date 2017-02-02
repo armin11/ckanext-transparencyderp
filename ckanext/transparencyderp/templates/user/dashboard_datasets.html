@@ -1,0 +1,37 @@
+{% extends "user/dashboard.html" %}
+
+{% block dashboard_activity_stream_context %}{% endblock %}
+
+{% block page_primary_action %}
+  {% if h.check_access('package_create') %}
+    <div class="page_primary_action">
+      <label for="form_select_schema">{{ _('Add Dataset') }}</label>
+      <select id="form_select_schema" onchange="location = this.value;">
+        <option>{{ _('Please select a schema')}}</option>
+	  {% for dataset_schema_name in h.scheming_dataset_schemas() | list %}
+            {% if dataset_schema_name != 'dataset' %}
+              {% set data = {
+                'type': dataset_schema_name }
+              %}
+              {% set title = h.transparencyderp_pull_title_from_schema(dataset_schema_name) %}
+              <option value="{{ '/'+dataset_schema_name+'/new' }}">{{ title }}</option>
+            {% endif %}
+          {% endfor %}
+      </select>
+    </div>
+  {% endif %}
+{% endblock %}
+
+{% block primary_content_inner %}
+  <h2 class="hide-heading">{{ _('My Datasets') }}</h2>
+  {% if c.user_dict.datasets %}
+    {% snippet 'snippets/package_list.html', packages=c.user_dict.datasets %}
+  {% else %}
+    <p class="empty">
+      {{ _('You haven\'t created any datasets.') }}
+      {% if h.check_access('package_create') %}
+        {% link_for _('Create one now?'), controller='package', action='new' %}
+      {% endif %}
+    </p>
+  {% endif %}
+{% endblock %}

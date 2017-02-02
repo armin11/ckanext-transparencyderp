@@ -1,0 +1,226 @@
+p {
+  font-family:inherit;
+  font-size:.875rem;
+  font-weight:400;
+  line-height:1.35;
+  margin-bottom:1.5rem;
+  text-rendering:optimizeLegibility;
+}
+
+h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6 {
+  color:#333;
+  font-family:Arial, "Helvetica Neue", Helvetica, Roboto, sans-serif;
+  font-style:normal;
+  font-weight:700;
+  line-height:1.2;
+  margin-bottom:0;
+  margin-top:0;
+  text-rendering:optimizeLegibility;
+}
+
+h1,.h1 {
+  font-size:1.75rem;
+}
+
+h2,.h2 {
+  font-size:1.5rem;
+}
+
+h3,.h3 {
+  font-size:1.25rem;
+}
+
+h4,.h4 {
+  font-size:1.0625rem;
+}
+
+h5,.h5 {
+  font-size:.875rem;
+}
+
+h6,.h6 {
+  font-size:.8125rem;
+}
+
+.box {
+  border:1px solid #e2e2e2;
+  box-shadow:none;
+}
+
+body {
+  background:#871d33;
+  color:#666;
+}
+
+.hero {
+  background:#fff;
+  min-height:230px;
+}
+
+.homepage .module-search .module-content {
+  background:#eee;
+  color:#666;
+}
+
+.masthead {
+  background:#eee url(/images/header-bg.png);
+  padding: 15px 0 0 0;
+}
+
+.account-masthead {
+  background:#fff;
+  color:#666;
+}
+
+.site-footer {
+  background:#fff;
+  border-top:3px #666;
+  color:#666;
+}
+
+.attribution .ckan-footer-logo {
+  background:#999 url(/base/images/ckan-logo-footer.png) no-repeat center;
+  border-radius:2px;
+  padding:3px;
+}
+
+.masthead .navigation .nav-pills li a {
+  color:#871d33;
+  font-size:16px;
+}
+
+.masthead .navigation .nav-pills li a:hover,.masthead .navigation .nav-pills li.active a {
+  color:#fff;
+  background:#871d33;
+  font-size:16px;
+}
+
+.btn-primary:hover {
+  background:#666;
+  color:fff;
+}
+
+.homepage .module-search .search-giant input {
+  border-radius:4px;
+  background-color:#fff;
+  border-color:#c6c6c6;
+}
+
+.homepage .module-search .tags .tag {
+  border-radius:2px;
+  border-color:0;
+}
+
+.homepage .module-search .tags .tag:hover {
+  color:#666;
+  background:#eee;
+  border-color:#666;
+}
+
+a:hover {
+  cursor:pointer;
+}
+
+.module .pagination {
+  border-top:1px solid;
+  border-bottom:1px solid;
+  margin-bottom:.375rem;
+  border-color:#c6c6c6;
+  padding:.9375rem 0;
+}
+
+.module .pagination ul li a {
+  width:35px;
+  height:35px;
+  text-align:center;
+  line-height:35px;
+  border-radius:4px;
+  background:#fff;
+  color:#666;
+  border:none;
+  margin:0 1px;
+  padding:0;
+}
+
+.module .pagination ul li {
+  padding:0 2px;
+}
+
+.module .pagination ul li a:hover,.module .pagination ul li.active a {
+  background:#bbb;
+  color:#fff;
+}
+
+.module .pagination li:first-child a,.module .pagination li:last-child a {
+  border-radius:4px;
+}
+
+h1 {
+  margin-bottom:21px;
+}
+
+h2 {
+  margin-bottom:18px;
+}
+
+h3 {
+  margin-bottom:17px;
+}
+
+.ckanext-pages-content ul {
+  margin-left:20px;
+  margin-bottom:10px;
+}
+
+.account-masthead .account ul li a,.site-footer a,.lang-select label,.homepage .stats ul li a b,.nav-tabs li a {
+  color:#666;
+}
+
+.account-masthead .account ul li a:hover,.homepage .module-search .tags h3 {
+  color:#fff;
+}
+
+.form-actions a,.form-actions button,.btn-primary,.homepage .module-search .tags {
+  background:#871d33;
+}
+
+.form-actions a:hover,.form-actions button:hover {
+  background:#666;
+  color:ffffff;
+}
+
+.masthead .site-search,.media-overlay {
+  display:none;
+}
+
+.homepage .stats ul li a b:hover,.search-form .search-input button i,.dataset-heading a {
+  color:#871d33;
+}
+
+.footer-links ul li {
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+.footer-links ul.unstyled {
+  float: left;
+  width: 50%;
+}
+
+.module-content.box {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+  body {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .box {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+  }
+}
+
