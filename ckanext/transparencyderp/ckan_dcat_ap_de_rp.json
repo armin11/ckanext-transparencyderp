@@ -1,8 +1,13 @@
 {
   "scheming_version": 1,
-  "dataset_type": "decision-rp-1",
-  "about": "A reimplementation of the default CKAN dataset schema",
-  "about_url": "http://github.com/ckan/ckanext-scheming",
+  "dataset_type": "ckan-dcat-ap-de-rp-min",
+  "dataset_type_label":
+    {
+      "en": "DCAT-AP minimal dataset",
+      "de": "DCAT-AP minimaler Datensatz"
+    },
+  "about": "An implementation of CKAN schema that conforms to DCAT-AP",
+  "about_url": "https://joinup.ec.europa.eu/asset/dcat_application_profile/description",
   "dataset_fields": [
     {
       "field_name": "title",
@@ -31,12 +36,131 @@
       "form_placeholder": "eg. Some useful notes about the data"
     },
     {
-      "preset": "date",
-      "field_name": "meeting_date",
-      "label":
+      "field_name": "govdata_categories",
+      "preset": "multiple_checkbox",
+      "label": {
+        "en": "GovData categories",
+        "de": "GovData Kategorien"
+      },
+      "choices": [
+        {
+          "value": "wirtschaft_arbeit",
+          "label": 
+            {
+              "en": "Economy & Work",
+              "de": "Wirtschaft & Arbeit"
+            }
+        },
+        {
+           "value": "transport_verkehr",
+           "label": 
+             {
+               "en": "Transport & Traffic",
+               "de": "Transport & Verkehr"
+             }
+        },
+        {
+          "value": "umwelt_klima",
+          "label": 
+            {
+              "en": "Environment & Climate",
+              "de": "Umwelt & Klima"
+            }
+        },
+        {
+          "value": "geo",
+          "label": 
+            {
+              "en": "Geography, Geology & Spatialbasedata",
+              "de": "Geographie, Geologie und Geobasisdaten"
+            }
+        },
        {
-          "en": "Date of meeting",
-          "de": "Sitzungsdatum"
+          "value": "gesundheit",
+          "label": 
+            {
+              "en": "Health",
+              "de": "Gesundheit"
+            }
+        },
+       {
+          "value": "verbraucher",
+          "label": 
+            {
+              "en": "Consumer",
+              "de": "Verbraucher"
+            }
+        },
+       {
+          "value": "infrastruktur_bauen_wohnen",
+          "label": 
+            {
+              "en": "Infrastructure, Buildings, Living",
+              "de": "Infrastruktur, Bauen und Wohnen"
+            }
+        },
+       {
+          "value": "bildung_wissenschaft",
+          "label": 
+            {
+              "en": "Education & Science",
+              "de": "Bildung & Wissenschaft"
+            }
+        },
+        {
+          "value": "verwaltung",
+          "label": 
+            {
+              "en": "Public administration, Budget & Taxes",
+              "de": "Öffentliche Verwaltung, Haushalt & Steuern"
+            }
+        },
+        {
+          "value": "gesetze_justiz",
+          "label": 
+            {
+              "en": "Law & Justice",
+              "de": "Gesetze & Justiz"
+            }
+        },
+        {
+          "value": "bevoelkerung",
+          "label": 
+            {
+              "en": "Population",
+              "de": "Bevölkerung"
+            }
+        },
+        {
+          "value": "politik_wahlen",
+          "label": 
+            {
+              "en": "Politics & Elections",
+              "de": "Politik & Wahlen"
+            }
+        },
+        {
+          "value": "soziales",
+          "label": 
+            {
+              "en": "Social affairs",
+              "de": "Soziales"
+            }
+        },
+       {
+          "value": "kultur_freizeit_sport_tourismus",
+          "label": 
+            {
+              "en": "Culture, Leisure, Sport & Tourism",
+              "de": "Kultur, Freizeit, Sport & Tourismus"
+            }
+        }
+      ],
+      "required": true,
+      "help_text": 
+        {
+          "en": "Categories for Datasets and Documents. The codelist is static and will be maintained by GovData.",
+          "de": "Kategorien für die Datensätze und Dokumente. Die Kategorien sind statisch und werden vom (GovData-) Portalbetreiber langfristig gepflegt"
         }
     },
     {

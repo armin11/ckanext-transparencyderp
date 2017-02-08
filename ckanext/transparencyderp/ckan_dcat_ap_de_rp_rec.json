@@ -1,0 +1,247 @@
+{
+  "scheming_version": 1,
+  "dataset_type": "ckan-dcat-ap-de-rp-rec",
+  "dataset_type_label":
+    {
+      "en": "DCAT-AP dataset (recommended elements)",
+      "de": "DCAT-AP Datensatz (empfohlene Elemente)"
+    },
+  "about": "An implementation of CKAN schema that conforms to DCAT-AP",
+  "about_url": "https://joinup.ec.europa.eu/asset/dcat_application_profile/description",
+  "dataset_fields": [
+    {
+      "field_name": "title",
+      "label": 
+        {
+          "en": "Title",
+          "de": "Titel"
+        },
+      "preset": "title",
+      "form_placeholder": 
+        {
+          "en": "eg. A descriptive title",
+          "de": "Titel / Überschrift"
+        },
+      "help_text": 
+        {
+          "en": "The title describes the dataset, the document or the app and will be shown in the result lists.",
+          "de": "Der Titel beschreibt den Datensatz, das Dokument oder die App prägnant und wird z. B. in Suchergebnissen und Listen angezeigt."
+        },
+      "help_inline": false,
+      "required": true
+    },
+    {
+      "field_name": "name",
+      "label": "URL",
+      "preset": "dataset_slug",
+      "form_placeholder": "eg. my-dataset"
+    },
+    {
+      "field_name": "notes",
+      "label": 
+        {
+          "en": "Description",
+          "de": "Beschreibung"
+        },
+      "form_snippet": "markdown.html",
+      "form_placeholder": 
+        {
+          "en": "a description for the dataset",
+          "de": "Beschreibung des Datensatzes / Dokumentes"
+        },
+      "help_text": 
+       {
+          "en": "English translation ToBeDone!",
+          "de": "Beschreibung und weitere Informationen zum Datensatz, zum Dokument oder zur App, wird auf der Detailseite dargestellt und kann mehrere Absätze umfassen."
+        },
+      "required": true
+    },
+    {
+      "field_name": "tag_string",
+      "label": "Tags",
+      "preset": "tag_string_autocomplete",
+      "form_placeholder": "eg. economy, mental health, government"
+    },
+    {
+      "field_name": "dcat_ap_eu_data_theme",
+      "preset": "multiple_checkbox",
+      "label": {
+        "en": "Data theme",
+        "de": "Themenkategorie"
+      },
+      "choices": [
+        {
+          "value": "AGRI",
+          "label": 
+            {
+              "en": "Agriculture, fisheries, forestry and food",
+              "de": "Landwirtschaft, Fischerei, Forstwirtschaft und Nahrungsmittel"
+            }
+        },
+        {
+           "value": "EDUC",
+           "label": 
+             {
+               "en": "Education, culture and sport",
+               "de": "Bildung, Kultur und Sport"
+             }
+        },
+        {
+          "value": "ENVI",
+          "label": 
+            {
+              "en": "Environment",
+              "de": "Umwelt"
+            }
+        },
+        {
+          "value": "ENER",
+          "label": 
+            {
+              "en": "Energy",
+              "de": "Energie"
+            }
+        },
+       {
+          "value": "TRAN",
+          "label": 
+            {
+              "en": "Transport",
+              "de": "Transport"
+            }
+        },
+       {
+          "value": "TECH",
+          "label": 
+            {
+              "en": "Science and technology",
+              "de": "Wissenschaft und Technologie"
+            }
+        },
+       {
+          "value": "ECON",
+          "label": 
+            {
+              "en": "Economy and finance",
+              "de": "Wirtschaft und Finanzen"
+            }
+        },
+       {
+          "value": "SOCI",
+          "label": 
+            {
+              "en": "Population and society",
+              "de": "Bevölkerung und Gesellschaft"
+            }
+        },
+        {
+          "value": "HEAL",
+          "label": 
+            {
+              "en": "Health",
+              "de": "Gesundheit"
+            }
+        },
+        {
+          "value": "GOVE",
+          "label": 
+            {
+              "en": "Government and public sector",
+              "de": "Regierung und öffentlicher Sektor"
+            }
+        },
+        {
+          "value": "REGI",
+          "label": 
+            {
+              "en": "Regions and cities",
+              "de": "Regionen und Städte"
+            }
+        },
+        {
+          "value": "JUST",
+          "label": 
+            {
+              "en": "Justice, legal system and public safety",
+              "de": "Justiz, Rechtssystem und öffentliche Sicherheit"
+            }
+        },
+        {
+          "value": "INTR",
+          "label": 
+            {
+              "en": "International issues",
+              "de": "Internationale Themen"
+            }
+        },
+       {
+          "value": "OP_DATPRO",
+          "label": 
+            {
+              "en": "Provisional data",
+              "de": "Vorläufige Daten"
+            }
+        }
+      ],
+      "required": true,
+      "help_text": 
+        {
+          "en": "This table provides the various themes used for dataset classification. The table has been developed in the context of the revision of the DCAT-AP. The themes have been defined by the working group in charge of the revision of the DCAT-AP.",
+          "de": "Kategorien zur Klassifikation von Datensätzen und Dokumenten. für die Datensätze und Dokumente. Das Schema wurde im Rahmen der Überarbeitung des europäischen Datenaustauschstandards DCAT-AP entwickelt."
+        }
+    },
+    {
+      "field_name": "maintainer",     
+      "label": 
+        {
+          "en": "Maintainer",
+          "de": "Verantwortliche Person"
+        },
+      "form_placeholder":
+        {
+          "en": "Joe Doe",
+          "de": "Max Mustermann"
+        },
+      "display_property": "dc:contributor"
+    },
+    {
+      "field_name": "maintainer_email",
+      "label": 
+        {
+          "en": "Email responsible person",
+          "de": "Email der verantwortlichen Person"
+        },
+      "form_placeholder":
+        {
+          "en": "joe.doe@example.com",
+          "de": "max.mustermann@mailserver.de"
+        },
+      "display_property": "dc:creator",
+      "display_snippet": "email.html",
+      "display_email_name_field": "maintainer"
+    },
+    {
+      "field_name": "owner_org",
+      "label": "Organization",
+      "preset": "dataset_organization"
+    }
+  ],
+  "resource_fields": [
+    {
+      "field_name": "url",
+      "label": "URL",
+      "preset": "resource_url_upload"
+    },
+    {
+      "field_name": "description",
+      "label": "Description",
+      "form_snippet": "markdown.html",
+      "form_placeholder": "Some useful notes about the data"
+    },
+    {
+      "field_name": "format",
+      "label": "Format",
+      "preset": "resource_format_autocomplete"
+    }
+  ]
+}

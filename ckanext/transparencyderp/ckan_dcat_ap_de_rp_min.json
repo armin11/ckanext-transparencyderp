@@ -1,0 +1,73 @@
+{
+  "scheming_version": 1,
+  "dataset_type": "ckan-dcat-ap-de-rp-min",
+  "dataset_type_label":
+    {
+      "en": "Minimum DCAT-AP dataset",
+      "de": "Minimaler DCAT-AP konformer Datensatz"
+    },
+  "about": "An implementation of CKAN schema that conforms to DCAT-AP",
+  "about_url": "https://joinup.ec.europa.eu/asset/dcat_application_profile/description",
+  "dataset_fields": [
+    {
+      "field_name": "name",
+      "label": "URL",
+      "preset": "dataset_slug",
+      "form_placeholder": "eg. my-dataset"
+    },
+    {
+      "field_name": "title",
+      "label": 
+        {
+          "en": "Title",
+          "de": "Titel"
+        },
+      "preset": "title",
+      "form_placeholder": 
+        {
+          "en": "eg. A descriptive title",
+          "de": "Top beschreibung"
+        },
+      "help_text": 
+        {
+          "en": "The title describes the dataset, the document or the app and will be shown in the result lists.",
+          "de": "Der Titel beschreibt den Datensatz, das Dokument oder die App prägnant und wird z. B. in Suchergebnissen und Listen angezeigt."
+        },
+      "help_inline": false,
+      "required": true
+    },
+    {
+      "field_name": "notes",
+      "label": 
+        {
+          "en": "Description",
+          "de": "Beschreibung"
+        },
+      "form_snippet": "markdown.html",
+      "form_placeholder": 
+        {
+          "en": "a description for the dataset",
+          "de": "Beschreibung des Datensatzes / Dokumentes"
+        },
+      "help_text": 
+       {
+          "en": "English translation ToBeDone!",
+          "de": "Beschreibung und weitere Informationen zum Datensatz, zum Dokument oder zur App, wird auf der Detailseite dargestellt und kann mehrere Absätze umfassen."
+        },
+      "required": true
+    },
+    {
+      "field_name": "owner_org",
+      "label": "Organization",
+      "preset": "dataset_organization"
+    }
+  ],
+  "resource_fields": [
+    {
+      "field_name": "url",
+      "label": "URL",
+      "preset": "resource_url_upload",
+      "required": "true"
+    }
+  ]
+}
