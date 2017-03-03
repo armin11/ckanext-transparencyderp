@@ -147,7 +147,15 @@ Adoption of solr configuration
 
 An adopted schemal.xml file is included in the root path of the plugin. To show what was altered, see the following snippet:
 
-```xml
+```xml   
+    
+    <!-- Extension for ckanext-spatial search via solr 3.1+ -->
+    <field name="bbox_area" type="float" indexed="true" stored="true" />
+    <field name="maxx" type="float" indexed="true" stored="true" />
+    <field name="maxy" type="float" indexed="true" stored="true" />
+    <field name="minx" type="float" indexed="true" stored="true" />
+    <field name="miny" type="float" indexed="true" stored="true" />
+
     <!-- field for custom resource choice lists-->
     <field name="res_extras_res_transparency_document_change_classification" type="string" indexed="true" stored="true" multiValued="false"/>
 
