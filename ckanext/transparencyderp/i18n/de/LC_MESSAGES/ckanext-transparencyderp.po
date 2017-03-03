@@ -150,3 +150,11 @@ msgstr ""
 " <p><strong>Es ist ein Fehler bei der Suche aufgetreten.</strong> Bitte versuchen Sie es "
 "erneut.</p> "
 
+#: ckanext/transparencyderp/templates/spatial/snippets/spatial_query.html:17
+msgid "Filter by location"
+msgstr "Räumlicher Filter"
+
+#: ckanext/transparencyderp/templates/spatial/snippets/spatial_query.html:18
+msgid "Clear"
+msgstr "Löschen"
+

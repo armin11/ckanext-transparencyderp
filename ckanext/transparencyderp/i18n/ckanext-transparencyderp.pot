@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-transparencyderp 0.0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-01-25 16:20+0100\n"
+"POT-Creation-Date: 2017-03-01 16:26+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,23 +18,63 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 0.9.6\n"
 
-#: ckanext/transparencyderp/plugin.py:95 ckanext/transparencyderp/plugin.py:103
-#: ckanext/transparencyderp/plugin.py:112
+#: ckanext/transparencyderp/plugin.py:101 ckanext/transparencyderp/plugin.py:111
+#: ckanext/transparencyderp/plugin.py:121
 msgid "transparency classification"
 msgstr ""
 
-#: ckanext/transparencyderp/plugin.py:96 ckanext/transparencyderp/plugin.py:104
-#: ckanext/transparencyderp/plugin.py:113
+#: ckanext/transparencyderp/plugin.py:102 ckanext/transparencyderp/plugin.py:112
+#: ckanext/transparencyderp/plugin.py:122
 msgid "govdata classification"
 msgstr ""
 
-#: ckanext/transparencyderp/plugin.py:97 ckanext/transparencyderp/plugin.py:106
-#: ckanext/transparencyderp/plugin.py:114
-msgid "Dataset type"
+#: ckanext/transparencyderp/plugin.py:103 ckanext/transparencyderp/plugin.py:113
+#: ckanext/transparencyderp/plugin.py:123
+msgid "doc change classification"
 msgstr ""
 
-#: ckanext/transparencyderp/plugin.py:98
-msgid "Entity type"
+#: ckanext/transparencyderp/templates/organization/read.html:6
+#: ckanext/transparencyderp/templates/package/search.html:16
+#: ckanext/transparencyderp/templates/user/dashboard_datasets.html:8
+msgid "Add Dataset"
+msgstr ""
+
+#: ckanext/transparencyderp/templates/organization/read.html:8
+#: ckanext/transparencyderp/templates/package/search.html:18
+#: ckanext/transparencyderp/templates/user/dashboard_datasets.html:10
+msgid "Please select a schema"
+msgstr ""
+
+#: ckanext/transparencyderp/templates/organization/read.html:33
+#: ckanext/transparencyderp/templates/package/search.html:41
+msgid "Relevance"
+msgstr ""
+
+#: ckanext/transparencyderp/templates/organization/read.html:34
+#: ckanext/transparencyderp/templates/package/search.html:42
+#: ckanext/transparencyderp/templates/snippets/search_form.html:4
+msgid "Name Ascending"
+msgstr ""
+
+#: ckanext/transparencyderp/templates/organization/read.html:35
+#: ckanext/transparencyderp/templates/package/search.html:43
+#: ckanext/transparencyderp/templates/snippets/search_form.html:4
+msgid "Name Descending"
+msgstr ""
+
+#: ckanext/transparencyderp/templates/organization/read.html:36
+#: ckanext/transparencyderp/templates/package/search.html:44
+msgid "Last Modified"
+msgstr ""
+
+#: ckanext/transparencyderp/templates/organization/read.html:37
+#: ckanext/transparencyderp/templates/package/search.html:45
+msgid "Popular"
+msgstr ""
+
+#: ckanext/transparencyderp/templates/organization/read.html:39
+#: ckanext/transparencyderp/templates/snippets/search_form.html:3
+msgid "Search datasets..."
 msgstr ""
 
 #: ckanext/transparencyderp/templates/package/search.html:4
@@ -42,56 +82,26 @@ msgstr ""
 msgid "Datasets"
 msgstr ""
 
-#: ckanext/transparencyderp/templates/package/search.html:16
-msgid "Add Dataset"
-msgstr ""
-
-#: ckanext/transparencyderp/templates/package/search.html:18
-msgid "Please select a schema"
-msgstr ""
-
-#: ckanext/transparencyderp/templates/package/search.html:39
-msgid "Relevance"
-msgstr ""
-
-#: ckanext/transparencyderp/templates/package/search.html:40
-#: ckanext/transparencyderp/templates/snippets/search_form.html:4
-msgid "Name Ascending"
-msgstr ""
-
-#: ckanext/transparencyderp/templates/package/search.html:41
-#: ckanext/transparencyderp/templates/snippets/search_form.html:4
-msgid "Name Descending"
-msgstr ""
-
-#: ckanext/transparencyderp/templates/package/search.html:42
-msgid "Last Modified"
-msgstr ""
-
-#: ckanext/transparencyderp/templates/package/search.html:43
-msgid "Popular"
-msgstr ""
-
-#: ckanext/transparencyderp/templates/package/search.html:62
+#: ckanext/transparencyderp/templates/package/search.html:64
 msgid "API"
 msgstr ""
 
-#: ckanext/transparencyderp/templates/package/search.html:63
+#: ckanext/transparencyderp/templates/package/search.html:65
 msgid "API Docs"
 msgstr ""
 
-#: ckanext/transparencyderp/templates/package/search.html:65
+#: ckanext/transparencyderp/templates/package/search.html:67
 msgid "full {format} dump"
 msgstr ""
 
-#: ckanext/transparencyderp/templates/package/search.html:66
+#: ckanext/transparencyderp/templates/package/search.html:68
 #, python-format
 msgid ""
 " You can also access this registry using the %(api_link)s (see "
 "%(api_doc_link)s) or download a %(dump_link)s. "
 msgstr ""
 
-#: ckanext/transparencyderp/templates/package/search.html:70
+#: ckanext/transparencyderp/templates/package/search.html:72
 #, python-format
 msgid ""
 " You can also access this registry using the %(api_link)s (see "
@@ -108,10 +118,6 @@ msgstr ""
 
 #: ckanext/transparencyderp/templates/snippets/facet_list.html:89
 msgid "There are no {facet_type} that match this search"
-msgstr ""
-
-#: ckanext/transparencyderp/templates/snippets/search_form.html:3
-msgid "Search datasets..."
 msgstr ""
 
 #: ckanext/transparencyderp/templates/snippets/search_form.html:17
@@ -142,5 +148,25 @@ msgstr ""
 msgid ""
 " <p><strong>There was an error while searching.</strong> Please try "
 "again.</p> "
+msgstr ""
+
+#: ckanext/transparencyderp/templates/spatial/snippets/spatial_query.html:17
+msgid "Filter by location"
+msgstr ""
+
+#: ckanext/transparencyderp/templates/spatial/snippets/spatial_query.html:18
+msgid "Clear"
+msgstr ""
+
+#: ckanext/transparencyderp/templates/user/dashboard_datasets.html:26
+msgid "My Datasets"
+msgstr ""
+
+#: ckanext/transparencyderp/templates/user/dashboard_datasets.html:31
+msgid "You haven't created any datasets."
+msgstr ""
+
+#: ckanext/transparencyderp/templates/user/dashboard_datasets.html:33
+msgid "Create one now?"
 msgstr ""
 

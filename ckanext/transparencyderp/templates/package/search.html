@@ -83,7 +83,8 @@
 
 {% block secondary_content %}
 <div class="filters">
-  <div>
+  <div>  
+    {% snippet "spatial/snippets/spatial_query.html", default_extent="[[48, 6], [52, 8.5]]"  %}
     {% for facet in c.facet_titles %}
       {{ h.snippet('snippets/facet_list.html', title=c.facet_titles[facet], name=facet) }}
     {% endfor %}
