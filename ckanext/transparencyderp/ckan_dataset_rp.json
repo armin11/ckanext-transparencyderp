@@ -9,7 +9,7 @@
       "label": 
         {
           "en": "Title",
-          "de": "Titel 1"
+          "de": "Titel"
         },
       "preset": "title",
       "form_placeholder": 
@@ -151,7 +151,6 @@
             }
         }
       ],
-      "required": true,
       "help_text": 
         {
           "en": "Categories for Datasets and Documents. The codelist is static and will be maintained by GovData.",
@@ -295,6 +294,13 @@
           "label": {
             "en": "Published information based on formal request",
             "de": "Im Rahmen des Antragsverfahrens gemäß den Bestimmungen des Teils 3 elektronisch zugänglich gemachte Informationen"
+          }
+        },
+        {
+          "value": "environmental_information",
+          "label": {
+            "en": "Information about the Environment",
+            "de": "Umweltinformationen"
           }
         }
       ]
