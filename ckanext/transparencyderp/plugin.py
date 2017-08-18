@@ -99,7 +99,7 @@ class TransparencyderpPlugin(plugins.SingletonPlugin, DefaultTranslation):
     #function to define further facets and their translations in the result window when search for dataset/package
     def dataset_facets(self, facets_dict, package_type):
         facets_dict['transparency_category_de_rp'] = toolkit._('transparency classification')
-        facets_dict['govdata_categories'] = toolkit._('govdata classification')
+        facets_dict['dcat_ap_eu_data_theme'] = toolkit._('dcat themes')
 	facets_dict['res_extras_res_transparency_document_change_classification'] = toolkit._('doc change classification')
         #facets_dict['res_license_id'] = toolkit._('license')
 	#facets_dict['dataset_type'] = toolkit._('Dataset type')
@@ -109,7 +109,7 @@ class TransparencyderpPlugin(plugins.SingletonPlugin, DefaultTranslation):
     #function to define further facets and their translations in the result window when search for group packages
     def group_facets(self, facets_dict, group_type, package_type):
         facets_dict['transparency_category_de_rp'] = toolkit._('transparency classification')
-        facets_dict['govdata_categories'] = toolkit._('govdata classification')
+        facets_dict['dcat_ap_eu_data_theme'] = toolkit._('dcat themes')
         facets_dict['res_extras_res_transparency_document_change_classification'] = toolkit._('doc change classification')
         #facets_dict['res_license_id'] = toolkit._('license')
         # facets_dict['dataset_type'] = toolkit._('Dataset type')
@@ -119,7 +119,7 @@ class TransparencyderpPlugin(plugins.SingletonPlugin, DefaultTranslation):
     #function to define further facets and their translations in the result window when search for organization packages
     def organization_facets(self, facets_dict, organization_type, package_type):
         facets_dict['transparency_category_de_rp'] = toolkit._('transparency classification')
-        facets_dict['govdata_categories'] = toolkit._('govdata classification')
+        facets_dict['dcat_ap_eu_data_theme'] = toolkit._('dcat themes')
         facets_dict['res_extras_res_transparency_document_change_classification'] = toolkit._('doc change classification')
         #facets_dict['res_license_id'] = toolkit._('license')
         #facets_dict['dataset_type'] = toolkit._('Dataset type')
@@ -136,7 +136,7 @@ class TransparencyderpPlugin(plugins.SingletonPlugin, DefaultTranslation):
     def before_index(self, data_dict):
         #no array any longer, cause it has only one choosable value
         #data_dict['transparency_category_de_rp'] = json.loads(data_dict.get('transparency_category_de_rp', '[]'))
-        data_dict['govdata_categories'] = json.loads(data_dict.get('govdata_categories', '[]'))
+        data_dict['dcat_ap_eu_data_theme'] = json.loads(data_dict.get('dcat_ap_eu_data_theme', '[]'))
         #qualify resource classifikations - if nothing is declared, set them to unknown
         try:
             value = data_dict['res_extras_res_transparency_document_change_classification']

@@ -161,7 +161,8 @@ schema. In this case the version should be set to the next CKAN version number.
     <dynamicField name="vocab_*" type="string" indexed="true" stored="true" multiValued="true"/>
     <dynamicField name="*" type="string" indexed="true"  stored="false"/>
     <field name="transparency_category_de_rp" type="string" indexed="true" stored="true" multiValued="false"/>
-    <field name="govdata_categories" type="string" indexed="true" stored="true" multiValued="true"/>
+    <!--<field name="govdata_categories" type="string" indexed="true" stored="true" multiValued="true"/>-->
+    <field name="dcat_ap_eu_data_theme" type="string" indexed="true" stored="true" multiValued="true"/>
 </fields>
 
 <uniqueKey>index_id</uniqueKey>

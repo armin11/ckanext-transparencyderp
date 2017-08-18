@@ -25,8 +25,8 @@ msgstr "Transparenz Klassifikation"
 
 #: ckanext/transparencyderp/plugin.py:96 ckanext/transparencyderp/plugin.py:104
 #: ckanext/transparencyderp/plugin.py:113
-msgid "govdata classification"
-msgstr "GovData Klassifikation"
+msgid "dcat themes"
+msgstr "Kategorie"
 
 #: ckanext/transparencyderp/plugin.py:97 ckanext/transparencyderp/plugin.py:106
 #: ckanext/transparencyderp/plugin.py:114
@@ -157,4 +157,6 @@ msgstr "Räumlicher Filter"
 #: ckanext/transparencyderp/templates/spatial/snippets/spatial_query.html:18
 msgid "Clear"
 msgstr "Löschen"
+
+
 
