@@ -129,131 +129,131 @@
       "form_placeholder": "eg. Some useful notes about the data"
     },
     {
-      "field_name": "govdata_categories",
+      "field_name": "dcat_ap_eu_data_theme",
       "preset": "multiple_checkbox",
       "label": {
-        "en": "GovData categories",
-        "de": "GovData Kategorien"
+        "en": "Data theme",
+        "de": "Themenkategorie"
       },
       "choices": [
         {
-          "value": "wirtschaft_arbeit",
+          "value": "AGRI",
           "label": 
             {
-              "en": "Economy & Work",
-              "de": "Wirtschaft & Arbeit"
+              "en": "Agriculture, fisheries, forestry and food",
+              "de": "Landwirtschaft, Fischerei, Forstwirtschaft und Nahrungsmittel"
             }
         },
         {
-           "value": "transport_verkehr",
+           "value": "EDUC",
            "label": 
              {
-               "en": "Transport & Traffic",
-               "de": "Transport & Verkehr"
+               "en": "Education, culture and sport",
+               "de": "Bildung, Kultur und Sport"
              }
         },
         {
-          "value": "umwelt_klima",
+          "value": "ENVI",
           "label": 
             {
-              "en": "Environment & Climate",
-              "de": "Umwelt & Klima"
+              "en": "Environment",
+              "de": "Umwelt"
             }
         },
         {
-          "value": "geo",
+          "value": "ENER",
           "label": 
             {
-              "en": "Geography, Geology & Spatialbasedata",
-              "de": "Geographie, Geologie und Geobasisdaten"
+              "en": "Energy",
+              "de": "Energie"
             }
         },
        {
-          "value": "gesundheit",
+          "value": "TRAN",
+          "label": 
+            {
+              "en": "Transport",
+              "de": "Transport"
+            }
+        },
+       {
+          "value": "TECH",
+          "label": 
+            {
+              "en": "Science and technology",
+              "de": "Wissenschaft und Technologie"
+            }
+        },
+       {
+          "value": "ECON",
+          "label": 
+            {
+              "en": "Economy and finance",
+              "de": "Wirtschaft und Finanzen"
+            }
+        },
+       {
+          "value": "SOCI",
+          "label": 
+            {
+              "en": "Population and society",
+              "de": "Bevölkerung und Gesellschaft"
+            }
+        },
+        {
+          "value": "HEAL",
           "label": 
             {
               "en": "Health",
               "de": "Gesundheit"
             }
         },
-       {
-          "value": "verbraucher",
+        {
+          "value": "GOVE",
           "label": 
             {
-              "en": "Consumer",
-              "de": "Verbraucher"
-            }
-        },
-       {
-          "value": "infrastruktur_bauen_wohnen",
-          "label": 
-            {
-              "en": "Infrastructure, Buildings, Living",
-              "de": "Infrastruktur, Bauen und Wohnen"
-            }
-        },
-       {
-          "value": "bildung_wissenschaft",
-          "label": 
-            {
-              "en": "Education & Science",
-              "de": "Bildung & Wissenschaft"
+              "en": "Government and public sector",
+              "de": "Regierung und öffentlicher Sektor"
             }
         },
         {
-          "value": "verwaltung",
+          "value": "REGI",
           "label": 
             {
-              "en": "Public administration, Budget & Taxes",
-              "de": "Öffentliche Verwaltung, Haushalt & Steuern"
+              "en": "Regions and cities",
+              "de": "Regionen und Städte"
             }
         },
         {
-          "value": "gesetze_justiz",
+          "value": "JUST",
           "label": 
             {
-              "en": "Law & Justice",
-              "de": "Gesetze & Justiz"
+              "en": "Justice, legal system and public safety",
+              "de": "Justiz, Rechtssystem und öffentliche Sicherheit"
             }
         },
         {
-          "value": "bevoelkerung",
+          "value": "INTR",
           "label": 
             {
-              "en": "Population",
-              "de": "Bevölkerung"
-            }
-        },
-        {
-          "value": "politik_wahlen",
-          "label": 
-            {
-              "en": "Politics & Elections",
-              "de": "Politik & Wahlen"
-            }
-        },
-        {
-          "value": "soziales",
-          "label": 
-            {
-              "en": "Social affairs",
-              "de": "Soziales"
+              "en": "International issues",
+              "de": "Internationale Themen"
             }
         },
        {
-          "value": "kultur_freizeit_sport_tourismus",
+          "value": "OP_DATPRO",
           "label": 
             {
-              "en": "Culture, Leisure, Sport & Tourism",
-              "de": "Kultur, Freizeit, Sport & Tourismus"
+              "en": "Provisional data",
+              "de": "Vorläufige Daten"
             }
         }
       ],
       "required": true,
       "help_text": 
         {
-          "en": "Categories for Datasets and Documents. The codelist is static and will be maintained by GovData.",
-          "de": "Kategorien für die Datensätze und Dokumente. Die Kategorien sind statisch und werden vom (GovData-) Portalbetreiber langfristig gepflegt"
+          "en": "This table provides the various themes used for dataset classification. The table has been developed in the context of the revision of the DCAT-AP. The themes have been defined by the working group in charge of the revision of the DCAT-AP.",
+          "de": "Kategorien zur Klassifikation von Datensätzen und Dokumenten. für die Datensätze und Dokumente. Das Schema wurde im Rahmen der Überarbeitung des europäischen Datenaustauschstandards DCAT-AP entwickelt."
         }
     },
     {
