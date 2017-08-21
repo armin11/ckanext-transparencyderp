@@ -10,25 +10,25 @@
           "en": "Title",
           "de": "Titel"
         },
-      "form_placeholder": 
-        {
-          "en": "eg. A descriptive title",
-          "de": "bspw. Ministerium des Innern und für Sport"
-        }
-    },
-    {
-      "field_name": "title_abbreviation",
-      "label": 
-        {
-          "en": "Abbreviation of the title",
-          "de": "Abkürzung für den Titel"
-        },
       "validators": "ignore_missing unicode", 
       "form_attrs": {"data-module": "slug-preview-target"},
       "form_placeholder": 
         {
-          "en": "eg. MDI",
-          "de": "bspw. MDI"
+          "en": "eg. A descriptive title in a short form",
+          "de": "Ein kurzer Titel bspw. MDI"
+        }
+    },
+    {
+      "field_name": "title_long",
+      "label": 
+        {
+          "en": "Organization title (long)",
+          "de": "Bezeichnung (lang)"
+        },
+      "form_placeholder": 
+        {
+          "en": "eg. Ministry of ...",
+          "de": "bspw. Ministerium des Innern und für Sport Rheinland-Pfalz"
         }
     },
     {
