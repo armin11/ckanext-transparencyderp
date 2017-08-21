@@ -1,0 +1,131 @@
+{
+  "scheming_version": 1,
+  "organization_type": "organization",
+  "about_url": "http://github.com/ckan/ckanext-scheming",
+  "fields": [
+    {
+      "field_name": "title",
+      "label": 
+        {
+          "en": "Title",
+          "de": "Titel"
+        },
+      "form_placeholder": 
+        {
+          "en": "eg. A descriptive title",
+          "de": "bspw. Ministerium des Innern und für Sport"
+        }
+    },
+    {
+      "field_name": "title_abbreviation",
+      "label": 
+        {
+          "en": "Abbreviation of the title",
+          "de": "Abkürzung für den Titel"
+        },
+      "validators": "ignore_missing unicode", 
+      "form_attrs": {"data-module": "slug-preview-target"},
+      "form_placeholder": 
+        {
+          "en": "eg. MDI",
+          "de": "bspw. MDI"
+        }
+    },
+    {
+      "field_name": "name",
+      "label": "URL",
+      "validators": "not_empty unicode name_validator group_name_validator",
+      "form_snippet": "slug.html",
+      "form_placeholder": "meine-organization"
+    },
+    {
+      "field_name": "description",
+      "label":
+        {
+          "en": "Description",
+          "de": "Beschreibung"
+        },
+      "form_snippet": "markdown.html",
+      "form_placeholder":
+        {
+          "en": "A little information about my organization...",
+          "de": "Eine kleine Beschreibung meiner Organisation"
+        }
+    },
+    {
+      "field_name": "image_url",
+      "label":
+        {
+          "en": "Logo",
+          "de": "Logo"
+        },     
+      "preset": "resource_url_upload"
+    },
+    {
+      "field_name": "department_id",
+      "label": 
+	{
+          "en": "Official ID of the department",
+          "de": "Offizielle ID der Organisation"
+        },
+      "form_placeholder":
+	{
+          "en": "XXXX-XXXX-...",
+          "de": "XXXX-XXXX-..."
+        }
+    },
+    {
+      "field_name": "department_address",
+      "label":
+	{
+          "en": "Address of the organization",
+          "de": "Straßenname und Hausnummer"
+        },
+      "form_placeholder":
+	{
+          "en": "Downing Street 10",
+          "de": "Schillerplatz 5"
+        }
+    },
+    {
+      "field_name": "department_postcode",
+      "label":
+	{
+          "en": "Postcode",
+          "de": "Postleitzahl"
+        },
+      "form_placeholder":
+	{
+          "en": "SW1A 2AB",
+          "de": "55116"
+        }
+    },
+    {
+      "field_name": "department_city",
+      "label":
+	{
+          "en": "City",
+          "de": "Stadt"
+        },
+      "form_placeholder":
+	{
+          "en": "London",
+          "de": "Mainz"
+        }
+    },
+    {
+      "field_name": "department_email",
+      "label":
+	{
+          "en": "Department Email",
+          "de": "EMail der Organisation"
+        },
+      "form_placeholder":
+	{
+          "en": "joe@example.com",
+          "de": "poststelle@mdi.rlp.de"
+        },     
+	"display_snippet": "email.html",     		"display_email_name_field": "title_abbreviation"
+    }
+  ]
+}
